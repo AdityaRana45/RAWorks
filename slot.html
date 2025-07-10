@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Slot</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-image: url("images/bgg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #f0f4f8; /* fallback */
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+      color: #34495e;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    select:focus {
+      border-color: #2979ff;
+      background-color: #fff;
+      outline: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .signupbtn {
+      background-color: #2979ff;
+    }
+
+    .signupbtn:hover {
+      background-color: #1c54b2;
+    }
+
+    .cancelbtn {
+      background-color: #e74c3c;
+    }
+
+    .cancelbtn:hover {
+      background-color: #c0392b;
+    }
+
+    .homebtn {
+      background-color: #2ecc71;
+    }
+
+    .homebtn:hover {
+      background-color: #27ae60;
+    }
+
+    a {
+      color: #2979ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .btn {
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      label {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .container {
+        padding: 15px;
+        margin: 15px auto;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .btn {
+        font-size: 12px;
+        padding: 10px;
+      }
+
+      label {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form class="container" action="../project/action_page.php" method="post">
+    <h1>Book your Slot</h1>
+    <p>Please fill in the form below to proceed.</p>
+
+    <label for="name">Name</label>
+    <input type="text" placeholder="Enter your name" name="name" required>
+
+    <label for="contact">Contact</label>
+    <input type="number" placeholder="Enter your phone number" name="contact" required>
+
+    <label for="company">Select Bike Company</label>
+    <select name="company" id="company" required>
+      <option value="" disabled selected>Select a company</option>
+      <option value="Hero MotoCorp">Hero MotoCorp</option>
+      <option value="Honda">Honda</option>
+      <option value="TVS">TVS</option>
+      <option value="Bajaj">Bajaj</option>
+      <option value="Royal Enfield">Royal Enfield</option>
+      <option value="Yamaha">Yamaha</option>
+      <option value="KTM">KTM</option>
+      <option value="Suzuki">Suzuki</option>
+      <option value="Harley-Davidson">Harley-Davidson</option>
+      <option value="Jawa">Jawa</option>
+    </select>
+
+    <label for="service">Issue/Service Required</label>
+    <input type="text" placeholder="Optional" name="service">
+
+    <p style="font-size: 14px; text-align: center;">
+      By submitting this form, you agree to our 
+      <a href="term&condition.html">Terms & Privacy</a>.
+    </p>
+
+    <button type="submit" class="btn signupbtn">Book Now</button>
+    <button type="reset" class="btn cancelbtn">Reset</button>
+  </form>
+
+  <!-- Go Back Home Button -->
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="index.html">
+      <button class="btn homebtn">Go Back to Home</button>
+    </a>
+  </div>
+
+</body>
+</html>

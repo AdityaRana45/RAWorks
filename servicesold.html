@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    body{
+        background: #fef8d5;
+        font-family: sans-serif;
+        
+    }
+    header{
+        background-color: #0d294b;
+        color: beige; 
+          
+    }
+     .text-center{
+        color: #fef8d5;
+    }
+    header >a{
+        text-decoration: none;
+        font-size: 16px;
+        position: absolute;
+        margin:30px 0 0 16px;
+        color: #fef8d5;
+
+    }
+    .card{
+        height: 390px;
+        width: 390px;
+        box-shadow: 2px 2px 10px black;
+        border: solid black 2px;
+        justify-content: space-evenly;
+        margin: 20px 10px 20px 10px;
+        transition:  0.5s ;
+        display: flex;
+        
+    }
+   
+   
+    .card:hover{
+        transform: scale(1.1);
+        transition:  0.5s ;
+    }
+     
+        
+     .img-fluid{
+        height: 180px;
+        
+        border-radius: 5px;
+        margin: 0;
+        box-shadow: 2px 2px 10px black;
+        
+
+    }
+    
+   
+
+    
+    
+    .list-unstyled > li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+   
+
+    .desc h2{
+        color: #0d294b;
+        font-size: 2.5rem;
+        
+        padding: 0.5rem 0 0 0 ;
+        
+    }
+    .desc {
+        font-size: 1.7rem;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        /* letter-spacing: 2px; */
+        margin-left: 40px;
+    }
+    .desc p{
+        margin-right: 80px;
+    }
+    .desc .hed1{
+        margin: 2rem 0 1.75rem 0;
+    }
+    .desc > ol{
+        padding: 1.75rem ;
+    }
+   
+    .foot{
+        height: 100px;
+        background-color: #2c3e50;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .copy{
+        height: 30px;
+        background-color: black;
+        color: white;
+        margin-top: 50px;
+        display:flex;
+        justify-content: center;    
+    }
+    .copy > a{
+        text-decoration: none;
+        color: beige;
+    }
+
+    @media (max-width:380px){
+        .card {
+            height: 380px;
+            width: 270px;
+        }
+        .desc p{
+            margin:0 0 0 0;
+        }
+        header >a{
+        text-decoration: none;
+        font-size: 16px;
+        position: absolute;
+        margin:8px 0 0 16px;
+        color: #fef8d5;
+
+    }
+        
+    }
+   
+   
+    
+   
+</style>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    
+        <header>
+            
+                
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>  
+            <h1 class="text-center">Services Pricing</h1>
+            <p class="text-center">Please checkout most effective service models</p>
+                
+            
+        </header>
+    
+        <div class="row text-center justify-content-evenly">
+            <div class="card col-sm-5 col-md-3 mb-3 me-3">
+                <div class="card-header"></div>
+                
+                <h3 class="card-title"><b>Premium Engine Service</b> </h3>
+                <img src="servicephotos/eng.jpg" class="img-fluid" alt="Responsive image">
+                
+                
+                <div class="card-body">
+                    <h3 class="card-title"> ₹999-₹1500</h3>
+                    
+                        <p>Oil Change<br>
+                        Spark Plug Replacement<br>
+                        Timing Belt Check</p>
+                        
+                        
+                    
+                
+                    
+                </div>
+            </div>
+            
+            <div class="card col-sm-5 col-md-3 mb-3 me-3">
+                <div class="card-header"></div>
+
+                <h3 class="card-title"><b>Precision Brake Service</b></h3>
+                <img src="servicephotos/brak.jpg" class="img-fluid" alt="Responsive image">
+                
+                
+                <div class="card-body">
+                    <h3 class="card-title">₹599-₹999</h3>
+                    
+                        <p> Brake Pad Replacement<br>
+                         Rotor Resurfacing<br>
+                        Brake Fluid Change</li>
+                        
+                        
+                    
+                    
+                </div>
+            </div>
+            <div class="card col-sm-5 col-md-3 mb-3 me-3">
+                <div class="card-header"></div>
+
+                <h3 class="card-title"><b>Carburetor Service</b></h3>
+                <img src="servicephotos/carb.jpg" class="img-fluid" alt="Responsive image">
+                
+                
+                <div class="card-body">
+                    <h3 class="card-title">₹599-₹999</h3>
+                   
+                        <p>Reassemble Carefully<br>
+                        Adjust Mixture & Idle Screws<br>
+                        Reinstall Carburetor</li>
+                        
+                        
+                    
+                    
+                </div>
+            </div>
+            <div class="card col-sm-5 col-md-3 mb-3 me-3">
+                <div class="card-header"></div>
+
+                <h3 class="card-title"><b>Suspension Service</b></h3>
+                <img src="servicephotos/sus.webp" class="img-fluid" alt="Responsive image">
+                
+                
+                <div class="card-body">
+                    <h3 class="card-title">₹599-₹999</h3>
+                    
+                        <p>Adjust Compression <br>
+                        Test Ride for Proper Sag and Damping<br>
+                        Fine-tune Settings for Load</p>
+                        
+                        
+                    
+                    
+                </div>
+            </div>
+            <div class="card col-sm-5 col-md-3 mb-3 me-3">
+                <div class="card-header"></div>
+
+                <h4 class="card-title"><b>Battery</b></h4>
+                <img src="servicephotos/battry2.webp" class="img-fluid" alt="Responsive image">
+                
+                
+                <div class="card-body">
+                    <h3 class="card-title">₹599-₹999</h3>
+                    
+                    <p>Charge Battery Fully<br>
+                    Inspect Battery Case for Swelling<br>
+                    Replace Battery </p>
+                   
+                        
+                    
+                    
+                </div>
+            </div>
+            <div class="card col-sm-5 col-md-3 mb-3 me-3">
+                <div class="card-header"></div>
+
+                <h3 class="card-title"><b>Washing Service</b></h3>
+                <img src="servicephotos/washing1.avif" class="img-fluid" alt="Responsive image">
+                
+                
+                <div class="card-body">
+                    <h3 class="card-title">₹599-₹999</h3>
+                    
+                        <p>Rinse Bike with Clean Water to Remove Loose Dirt<br>
+                        Apply Motorcycle-Safe Soap or Cleaner</p>
+                        
+                        
+                        
+                    
+                    
+                </div>
+            </div>
+            <div class="card col-sm-5 col-md-3 mb-3 me-3">
+                <div class="card-header"></div>
+
+                <h3 class="card-title"><b>Paint Service</b></h3>
+                <img src="servicephotos/paint.jpg" class="img-fluid" alt="Responsive image">
+                
+                
+                <div class="card-body">
+                    <h3 class="card-title">₹599-₹999</h3>
+                    
+                        
+                        <p>Sand Lightly Between Coats (for smooth finish)</p>
+                        
+                        
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="card col-sm-5 col-md-3 mb-3 me-3">
+                <div class="card-header"></div>
+
+                <h3 class="card-title"><b>Inspection</b></h3>
+                <img src="servicephotos/inspection.png" class="img-fluid" alt="Responsive image">
+                
+                
+                <div class="card-body">
+                    <h3 class="card-title">₹599-₹999</h3>
+                    
+                        <p>Check Tire Pressure and Tread Depth<br>
+                        Inspect Brake Pads and Discs for Wear
+                        Check Chain Tension and Lubrication</li>
+                        
+                        
+                    
+                    
+                </div>
+            </div>
+
+            <div class="card col-sm-10 col-md-3 mb-3 me-3">
+                <div class="card-header"></div>
+                <h3 class="card-title"> <b>Expert Tyre Services</b></h3>
+                <img src="servicephotos/tyre.jpg" class="img-fluid" alt="Responsive image">
+                    
+                <div class="card-body">
+                    <h3 class="card-title">₹1999-₹4999</h3>
+                    
+                        <p>Check Tyre Pressure (match recommended PSI)<br>
+                        Inspect Tread Depth (look for wear indicators)</p>
+                        
+                    
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="desc">
+        <h2 class="hed1"><b>Important Bike Maintenance Tips For Every Riders</b></h2>
+        <p>Maintaining your bike is important as it helps you have a smoother experience with it. As with all machines, a bike, 
+        too requires regular check-ups and maintenance. Aside from making your ride smoother, routine bike maintenance also helps
+        ensure the vehicle stays in good shape.After all, the general safety of your bike can also mean that you have less to deal 
+        with in terms of repair costs. This also makes buying a Motor insurance policy for your bike quite essential.It can take care
+        of the expenses that can come up if your bike were to suffer damages due to multiple reasons. * Claims are subject to terms and
+        conditions set forth under a two-wheeler insurance policy.Hence, taking care of these aspects of your bike can make a major 
+        difference. With that in mind,here are some tips for effective bike maintenance that you must follow.</p>
+
+        <h2><b>Tips To Keep Your Bike In Good Condition</b></h2>
+        <ol>
+            <li><b>Check engine oil regularly</b>
+            <p>Continuous usage of the bike can result in the engine oil decreasing, in quantity as well as quality. The latter is especially relevant if you drive in areas where dirt and dust are common,
+                 which can make the engine oil impure and viscous. This can negatively affect your bike’s engine.</p></li>
+            <li><b> Do not overlook the battery</b>
+                <p>While the engine is one of the most important elements of the bike, the battery should not be overlooked either. Battery care may include checking that the battery terminals are correctly fixed and oiled in the right manner.
+                     Furthermore, you may also want to check the level of distilled water in the battery. If the fluid is running low, add de-ionized distilled water to your bike’s battery solution</p>
+            </li>
+            <li><b>Ensure tyre maintenance</b>
+                <p>Your tyres are an important determinant of how well your bike can ride. Hence, you should check the air pressure of the tyre as well as look after any urgent wear and tear. Additionally, ensure to choose a type of tyre that suits your riding style.</p>
+            </li>
+            <li><b>Don’t let the brakes break down</b>
+                <p>It is vital that your brakes work effectively; otherwise, you run the risk of collisions. To ensure their proper functioning, check the brake fluid regularly. For ideal performance, the brake fluid must be changed every 1-2 years. Furthermore,
+                    also ensure that the brake pads are not worn down, to avoid your hands skidding on the brakes.</p>
+            </li>
+        </ol>
+
+
+
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="copy"><a href="term&condition.html"><p>Copyright ©2025 RAWorks</p></a></div>
+        </div>
+    </footer>
+         
+ 
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Dark Mode</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1581090700227-1e8c8cb14a58?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    header h1 {
+      background-color: #2979ff(0, 0, 0, 0.6);
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 2.5rem;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .intro {
+      background-color: #1f1f1f;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #2979ff(255, 87, 87, 0.2);
+      margin-bottom: 40px;
+    }
+
+    .intro h2 {
+      color: #2979ff;
+      margin-bottom: 15px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    table {
+      width: 100%;
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 15px #2979ff(255, 87, 87, 0.2);
+    }
+
+    h3 {
+      color: #2979ff;
+      margin-bottom: 15px;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    i {
+      color: #2979ff;
+      margin-right: 8px;
+    }
+
+    .map {
+      grid-column: span 2;
+      text-align: center;
+    }
+
+    iframe {
+      border-radius: 8px;
+      width: 100%;
+      height: 300px;
+      border: 2px solid #2979ff;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Background -->
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <!-- Intro Section -->
+  <div class="content">
+    <div class="intro">
+      <h2>Who We Are</h2>
+      <p>
+        Welcome to our automobile service center! We specialize in providing high-quality 
+        <strong>two-wheeler servicing</strong>, 
+        <strong>car washing</strong>, and 
+        <strong>cleaning services</strong> for all types of vehicles.
+        We also offer convenient <strong>pickup and drop facilities</strong> to save you time and hassle.
+      </p>
+      <p>
+        Our mission is to keep your vehicles running smoothly and looking brand new with professional service, modern equipment, and a passionate team.
+      </p>
+    </div>
+
+    <!-- Address & Details -->
+    <div class="container">
+      <div class="address">
+        <table>
+          <tr><td><h3>Address</h3></td></tr>
+          <tr><td>Major District Road 43, Kudal Upperli,</td></tr>
+          <tr><td>Krishnanagr, Tehsil Baijnath</td></tr>
+          <tr><td>District Kangra</td></tr>
+          <tr><td>Himachal Pradesh 176128</td></tr>
+        </table>
+      </div>
+
+      <div class="details">
+        <table>
+          <tr><td colspan="2"><h3>Details</h3></td></tr>
+          <tr>
+            <td><i class="fa-solid fa-envelope"></i>Email</td>
+            <td>abc@gmail.com</td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-phone"></i>Phone no</td>
+            <td>123456789</td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-calendar-days"></i>Working days</td>
+            <td>Monday - Sunday</td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-wrench"></i>Working hours</td>
+            <td>8:00 AM - 7:00 PM</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Map -->
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.8888895287537!2d76.66805797528468!3d31.991027374002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904c74b974b0077%3A0x73807f2a6085441d!2sRana%20Auto%20Workshop!5e0!3m2!1sen!2sin!4v1743610984620!5m2!1sen!2sin" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <style>
+      .landingimage {
+  height: 600px; /* Ensuring the parent container is also 600px */
+  width: 100%;
+  background: #2979ff;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100%; /* Fills the full height of .landingimage */
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('images/bggg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Prevents overflow of content */
+}
+
+/* Button style */
+.book-button {
+  display: inline-block;
+  background: #2979ff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 24px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+ 
+  transition-duration: 0.3s;
+}
+
+.book-button:hover {
+  background: #5393ff;
+  transform: scale(1.1);
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 38px;
+  left: 16px;
+  font-size: 1.5rem;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 2rem;
+  font-style: oblique;
+}
+
+/* Top right */
+.top-right {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+}
+
+/* Bottom right */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered content */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  text-align: center;
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 768px) {
+  .book-button {
+    width: 140px;
+    font-size: 0.9rem;
+  }
+
+  .centered {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .bottom-left,
+  .top-left,
+  .bottom-right {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bottom-left,
+  .top-left,
+  .bottom-right,
+  .top-right {
+    font-size: 0.9rem;
+    padding: 4px;
+  }
+
+  .book-button {
+    width: 120px;
+    padding: 12px 16px;
+  }
+}
+    
+      </style>
+
+</head>
+<a href="https://wa.me/918076201341" class="whatsapp-icon" target="_blank" title="Chat with us on WhatsApp">
+  <i class="fa-brands fa-square-whatsapp"></i>
+</a>
+
+<body id="body">
+<header>
+
+
+<div class="topnav" id="myTopnav">
+  <!-- Logo Image -->
+  <img src="images/icon.png" alt="Logo">
+  
+  <!-- Navigation Links with Icons -->
+  <a href="index.html" class="active"><i class="fa fa-home"></i> Home</a>
+  <a href="services.html"><i class="fa fa-wrench"></i> Service</a>
+  <a href="https://www.google.co.in/maps/place/Rana+Auto+Workshop/@31.9910274,76.668058,17z/data=!3m1!4b1!4m6!3m5!1s0x3904c74b974b0077:0x73807f2a6085441d!8m2!3d31.9910274!4d76.6706329!16s%2Fg%2F11tc_ggzrr?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa fa-map-marker"></i> Location</a>
+  <a href="https://www.google.com/maps/place/Rana+Auto+Workshop/@31.9910274,76.6706329,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNo1cd9dUn9ULZ2_q1ORzMb1Lb17BWa81BanNcp!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fp%2FAF1QipNo1cd9dUn9ULZ2_q1ORzMb1Lb17BWa81BanNcp%3Dw529-h298-k-no!7i4000!8i2250!4m9!3m8!1s0x3904c74b974b0077:0x73807f2a6085441d!8m2!3d31.9910274!4d76.6706329!10e5!14m1!1BCgIgARICEAE!16s%2Fg%2F11tc_ggzrr?entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa fa-image"></i> Gallery</a>
+  <a href="aboutus.html"><i class="fa fa-info-circle"></i> About Us</a>
+  <a href="adminlogin.html" target="_blank"><i class="fa fa-user"></i> Admin</a>
+
+  <!-- Mobile Menu Icon -->
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()" aria-label="Toggle navigation">&#9776;</a>
+</div>
+
+
+    
+</header>
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+
+
+<div class="landingimage">
+  <div class="container">
+    <div class="bottom-left">
+      <h3>We have the best service for your needs<br><br></h3>
+    </div>
+    <div class="top-left">
+      <h4>An Automobile Clinic</h4><br>
+    </div>
+    <div class="top-right">
+      <a href="slot.html" class="book-button">Book your slot here</a>
+    </div>
+   <div class="bottom-right" style="display: flex; align-items: center; gap: 8px;">
+  <dotlottie-player 
+    src="https://lottie.host/911d6fe4-d86c-4524-886f-a8679b952b35/AjZxsyRvfQ.lottie" 
+    background="transparent" 
+    speed="1" 
+    style="width: 60px; height: 60px;" 
+    loop 
+    autoplay>
+  </dotlottie-player>
+  <h4 style="margin: 0;">Your Trusted Partner</h4>
+</div>
+
+    <div class="centered">
+      <h2>
+        DO YOU NEED TO REPAIR<br>
+        <span style="color: yellow;">YOUR VEHICLE?</span>
+      </h2>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="services"> Our services for two whelers</div>
+    <div class="one">
+        <div class="boxa"><img src="images/inspection.jpeg" height="80px" width="80px">
+        <h4>Inspection</h4>
+        </div>
+
+        <div class="boxb">
+            <img src="images/engine.jpg"height="80px" width="80px">
+            <h4>Engine</h4>
+        </div>
+        <div class="boxc">
+            <img src="images/suspension.jpg"height="80px" width="80px">
+            <h4>Suspension</h4>
+        </div>
+        <div class="boxd">
+            <img src="images/battery.jpg"height="80px" width="80px">
+            <h4>Battery</h4>
+        </div>
+        <div class="boxe">
+            <img src="images/wheel.png"height="80px" width="80px">
+            <h4>Wheel</h4>
+        </div>
+        
+    </div>
+    <div class="two">
+        <div class="boxf">
+            <img src="images/wah.webp"height="80px" width="80px">
+            <h4>Wash</h4>
+        </div>
+        <div class="boxg">
+            <img src="images/servicing.webp"height="80px" width="80px">
+            <h4>Servicing</h4>
+        </div>
+        <div class="boxh">
+            <img src="images/barkes.png"height="80px" width="80px">
+            <h4>Brakes</h4>
+        </div>
+        <div class="boxi">
+            <img src="images/carborator.jpg"height="80px" width="80px">
+            <h4>Carborator</h4>
+        </div>
+        <div class="boxj">
+            <img src="images/painting.png"height="80px" width="80px">
+            <h4>Paint</h4>
+        </div>
+
+    </div>
+    <div class="marqueeheading">Orignal spare Parts</div>
+    
+    <div class="marquee" behavior="alternate">
+        <marquee>
+            <img src="images/bosch.png" height="150px" width="200px">
+            <img src="images/motol.png" height="150px" width="200px">
+            <img src="images/shell.jpg" height="150px" width="200px">
+            <img src="images/Bajaj-logo.jpg" height="150px" width="200px">
+            <img src="images/ceat.webp" height="150px" width="200px">
+            <img src="images/hereo.jpg" height="150px" width="200px">
+            <img src="images/Michelin-Emblem.png" height="150px" width="200px">
+            <img src="images/mrf.jpg" height="150px" width="200px">
+        </marquee>
+    </div>
+
+    <p id="a">Curated Custom Services</p>
+    <div class="slideshow-box">
+        <div class="slideshow-container">
+      
+          <div class="slideshow-slide slideshow-fade">
+            <div class="slideshow-number">1 / 3</div>
+            <img src="images/car1.webp" class="slideshow-image">
+            <div class="slideshow-caption"><h1>Car washing</h1></div>
+          </div>
+      
+          <div class="slideshow-slide slideshow-fade">
+            <div class="slideshow-number">2 / 3</div>
+            <img src="images/car2.jpg" class="slideshow-image">
+            <div class="slideshow-caption"><h1>vacum Cleaning</h1></div>
+          </div>
+      
+          <div class="slideshow-slide slideshow-fade">
+            <div class="slideshow-number">3 / 3</div>
+            <img src="images/car3.webp" class="slideshow-image">
+            <div class="slideshow-caption"><h1> Car Polishing</h1></div>
+          </div>
+      
+        </div>
+        <br>
+      
+        <div style="text-align:center">
+          <span class="slideshow-dot"></span> 
+          <span class="slideshow-dot"></span> 
+          <span class="slideshow-dot"></span> 
+        </div>
+      </div>
+
+    <div class="guarantee"><p>We Guarantee</p></div>
+    <div class="firstg">
+        <div id="aa">Free Pickup Drop</div>
+        <div id="bb">Genuine Parts</div>
+        <div id="ee">No Hidden Charges</div>
+    </div>
+    
+    <div class="secondg">
+        <Div id="cc">Affordable Prices</Div>
+        <Div id="dd">15 Days Warranty</Div>
+        <div id="bb">Customer Satisfaction</div>
+    </div>
+<footer>
+    <div class="last">
+        <div><ul>
+            <h3>Our Services</h3>
+            <li>Scheduled services</li>
+            <li>Custom repairs</li>
+            <li>Lights and fitments</li>
+            <li>Engines works</li>
+            <li> Cleaning</li>
+            </ul>
+        </div>
+        <div>
+
+        <ul>
+            <h3>Popular brands</h3>
+        <li>Bajaj</li>
+        <li>TVS</li>
+        <li>Hero</li>
+        <li>Honda</li>
+        <li>Royal Enfield</li>
+        </ul>
+        </div>
+
+    </div>
+  <div id="footer" class="footer">
+    
+    <div class="address">
+        <table cellspacing="5px">
+            <tr> <td><h3>Address</h3></td></tr>
+            <tr><td>Major District Road 43, Kudal Upperli,</td></tr>
+       <tr> <td>Krishnanagr, Tehsil Baijnath</td></tr>
+       <tr> <td>District Kangra</td></tr>
+       <tr><td> Himachal Pradesh 176128</td></tr>
+    </table>
+    </div>
+    <div class="table">
+            <table cellspacing="10px">
+                <tr><td><h3>Details</h3></td></tr>
+                    <td><i class="fa-solid fa-envelope"></i> Email</td>
+                    <td>abc@gmail.com</td>
+                </tr>
+                    <td><i class="fa-solid fa-phone"></i> Phone no</td>
+                    <td>123456789</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-calendar-days"></i> Working days</td>
+                    <td>Monday - Sunday</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-wrench"></i>Working hours</td>
+                    <td>8:00AM - 7:00PM</td>
+                </tr>
+            </table>
+
+    </div>
+
+    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.8888895287537!2d76.66805797528468!3d31.991027374002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904c74b974b0077%3A0x73807f2a6085441d!2sRana%20Auto%20Workshop!5e0!3m2!1sen!2sin!4v1743610984620!5m2!1sen!2sin" width="200" height="200" style="border:2px solid red;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+<div class="copyright"><a href="term&condition.html"><p>Copyright &copy;2025 RAWorks</p></a></div>
+
+  <script src="static/javascriptfile.js"></script>
+  
+
+</footer>
+</body>
+</html>
