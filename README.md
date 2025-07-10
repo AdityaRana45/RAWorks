@@ -10,8 +10,8 @@
 ![Admin Panel](images/s4.jpg)
 
 ## 🛠️ Admin Panel
-![Admin Panel](images/admins.jpg)
+![Admin Panel](images/admin.jpg)
 
 
 ## 🛠️ backend
-![backend](images/backend.jpg)
+![backend](images/b.jpg)
